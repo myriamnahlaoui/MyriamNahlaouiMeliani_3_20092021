@@ -1,0 +1,23 @@
+{
+  "name": "OHMYFOOD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myriamnahlaoui/MyriamNahlaouiMeliani_3_20_09_2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myriamnahlaoui/MyriamNahlaouiMeliani_3_20_09_2021/issues"
+  },
+  "homepage": "https://github.com/myriamnahlaoui/MyriamNahlaouiMeliani_3_20_09_2021#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
