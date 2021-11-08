@@ -1,0 +1,13 @@
+body{
+  @extend %body;
+  font-family: $simple;
+  font-size: $normal;
+}
+
+h1, h2, h3{
+  font-family:$simple;
+}
+
+h1{
+  font-size: $h1;
+}

@@ -1,0 +1,29 @@
+//réglages pages
+%body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+//réglages sections
+%section{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+//réglage du logo d'entête
+%logoEntete{
+  margin: 10px auto;
+  img{
+    width: 120px;
+  }
+}
+
+//mise en forme 
+%flexColumnCenter{
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}

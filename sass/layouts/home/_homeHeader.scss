@@ -1,0 +1,34 @@
+.header{
+  @extend %section;
+}
+
+.header__logo{
+  @extend %logoEntete;
+}
+
+.header__localisation{
+  display: flex;
+  justify-content: center;
+  background-color: $grey;
+  height: 40px;
+  align-items: center;
+  input{
+    border: none;
+    padding-left: 10px;
+    width: 110px;
+    background-color: $grey;
+  }
+}
+
+.header__presentation{
+  @extend %flexColumnCenter;
+  align-items: center;
+  background-color: $greyLight;
+  button{
+    @include btn;
+  }
+  button:hover{
+    @include hoverBtn;
+  }
+}
+
