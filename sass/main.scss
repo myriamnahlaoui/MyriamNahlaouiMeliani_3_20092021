@@ -1,6 +1,8 @@
-@use "normalize.scss";
+@import "normalize.scss";
 @import "utils/variables";
 @import "utils/placeholders";
 @import "components/buttons";
+@import "components/cards";
 @import "layouts/home/homeGeneral";
 @import "layouts/home/homeHeader";
+@import "layouts/home/homeFunctioning"

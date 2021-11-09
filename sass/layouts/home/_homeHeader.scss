@@ -1,5 +1,6 @@
 .header{
-  @extend %section;
+  @extend %flexColumn;
+  width: 100%;
 }
 
 .header__logo{
@@ -24,6 +25,10 @@
   @extend %flexColumnCenter;
   align-items: center;
   background-color: $greyLight;
+  h1{
+    width: 200px;
+    margin: 40px auto 0px;
+  }
   button{
     @include btn;
   }

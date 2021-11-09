@@ -343,17 +343,10 @@ body {
   box-sizing: border-box;
 }
 
-.header {
-  margin: auto;
+.functioning, .functioning__group, .header {
   display: flex;
   flex-direction: column;
-}
-
-.header__logo {
-  margin: 10px auto;
-}
-.header__logo img {
-  width: 120px;
+  margin: auto;
 }
 
 .header__presentation {
@@ -361,6 +354,13 @@ body {
   flex-direction: column;
   margin: auto;
   text-align: center;
+}
+
+.header__logo {
+  margin: 10px auto;
+}
+.header__logo img {
+  width: 120px;
 }
 
 body {
@@ -374,6 +374,19 @@ h1, h2, h3 {
 
 h1 {
   font-size: 1.125rem;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 35px 0px 15px 15px;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
 }
 
 .header__localisation {
@@ -394,6 +407,10 @@ h1 {
   align-items: center;
   background-color: #f7f7f7;
 }
+.header__presentation h1 {
+  width: 200px;
+  margin: 40px auto 0px;
+}
 .header__presentation button {
   border: none;
   background: linear-gradient(#ff79da, #9356dc);
@@ -406,6 +423,51 @@ h1 {
 .header__presentation button:hover {
   box-shadow: -5px 5px 4px 0px #808080;
   opacity: 0.7;
+}
+
+.functioning, .functioning__group {
+  width: 100%;
+}
+
+.functioning__choice, .functioning__menu, .functioning__restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #f7f7f7;
+  margin: 10px auto;
+  border-radius: 20px;
+  padding: 4px;
+  box-shadow: -5px 7px 8px 0px #efefef;
+  width: 248px;
+}
+.functioning__choice:hover, .functioning__menu:hover, .functioning__restaurant:hover {
+  background: #F7F1FF;
+}
+
+.functioning__choice--number, .functioning__menu--number, .functioning__restaurant--number {
+  font-size: 12px;
+  background: #9356dc;
+  border-radius: 50px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(-22px);
+}
+.functioning__choice--number p, .functioning__menu--number p, .functioning__restaurant--number p {
+  color: #ffffff;
+  transform: translate(8px, -6px);
+}
+
+.functioning__choice--icone, .functioning__menu--icone, .functioning__restaurant--icone {
+  transform: translateX(-22px);
+  color: #808080;
+}
+.functioning__choice--icone:hover, .functioning__menu--icone:hover, .functioning__restaurant--icone:hover {
+  color: #9356dc;
+}
+.functioning__choice--icone ~ p, .functioning__menu--icone ~ p, .functioning__restaurant--icone ~ p {
+  width: 160px;
+  transform: translateX(-14px);
 }
 
 /*# sourceMappingURL=style.css.map */
