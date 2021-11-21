@@ -1,6 +1,7 @@
 .functioning, .functioning__group{
   @extend %flexColumn;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .functioning__choice, .functioning__menu, .functioning__restaurant{
@@ -34,7 +35,6 @@
   &:hover{
     color:$purple;
   }
- 
   ~p{
     width: 160px;
     transform: translateX(-14px);
