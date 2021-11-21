@@ -365,7 +365,7 @@ body {
 
 body {
   font-family: "Roboto";
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 h1, h2, h3 {
@@ -378,7 +378,7 @@ h1 {
 
 h2 {
   font-size: 1rem;
-  margin: 35px 0px 15px 15px;
+  margin: 35px 0px 0px 15px;
 }
 
 img {
@@ -427,6 +427,7 @@ img {
 
 .functioning, .functioning__group {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .functioning__choice, .functioning__menu, .functioning__restaurant {
@@ -436,7 +437,7 @@ img {
   align-items: center;
   background: #f7f7f7;
   margin: 10px auto;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 4px;
   box-shadow: -5px 7px 8px 0px #efefef;
   width: 248px;
@@ -455,7 +456,7 @@ img {
 }
 .functioning__choice--number p, .functioning__menu--number p, .functioning__restaurant--number p {
   color: #ffffff;
-  transform: translate(8px, -6px);
+  transform: translate(8px, -7px);
 }
 
 .functioning__choice--icone, .functioning__menu--icone, .functioning__restaurant--icone {
@@ -468,6 +469,126 @@ img {
 .functioning__choice--icone ~ p, .functioning__menu--icone ~ p, .functioning__restaurant--icone ~ p {
   width: 160px;
   transform: translateX(-14px);
+}
+
+.restaurants {
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.restaurants .restaurant__group {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.restaurants .restaurant__group a {
+  text-decoration: none;
+  color: #000000;
+}
+.restaurants .restaurant__group figure {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+.restaurants .restaurant__group figure img {
+  height: 104px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurants .restaurant__group figcaption {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 54px;
+  border-radius: 0px 0px 15px 15px;
+}
+.restaurants .restaurant__group figcaption h3 {
+  font-size: 0.8rem;
+  margin: 10px 0px 0px 10px;
+}
+.restaurants .restaurant__group figcaption p {
+  margin: 5px 0px 0px 10px;
+}
+.restaurants .restaurant__group i {
+  transform: translate(172px, -32px);
+  font-size: 0.8rem;
+}
+
+.restaurant__la-palette-du-gout {
+  margin-bottom: 0px;
+}
+
+.restaurant__la-palette-du-gout img {
+  object-position: 0px -30px;
+}
+
+.restaurant__la-note-enchantee img {
+  object-position: 0px 0px;
+}
+
+.restaurant__a-la-francaise img {
+  object-position: 0px -30px;
+}
+
+.restaurant__le-delice-des-sens img {
+  object-position: 0px -33px;
+}
+
+.restaurant__la-palette-du-gout--new, .restaurant__la-note-enchantee--new {
+  color: #139273;
+  font-weight: bold;
+  font-size: 0.7rem;
+  background: #99e2d0;
+  width: 45px;
+  padding: 2px;
+  transform: translate(135px, 25px);
+}
+
+footer {
+  background: #353535;
+  color: #ffffff;
+  width: 100%;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+footer .footer__logo {
+  font-family: "Shrikhand";
+  font-size: 1rem;
+}
+footer .footer_restaurant {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__restaurant--proposition, footer .footer__restaurant--partner {
+  display: flex;
+  align-items: center;
+}
+footer .footer__restaurant--proposition p, footer .footer__restaurant--partner p {
+  margin-block: 5px;
+}
+
+.footer__restaurant--proposition p {
+  margin-left: 7px;
+}
+
+.footer__restaurant--partner p {
+  margin-left: 3px;
+}
+
+.footer__restaurant--legal a, .footer__restaurant--contact a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__restaurant--contact {
+  margin-bottom: 20px;
+  margin-block-start: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

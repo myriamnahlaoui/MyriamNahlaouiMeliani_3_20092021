@@ -1,0 +1,43 @@
+footer{
+  background: $blackFooter;
+  color: $white;
+  width: 100%;
+  .footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+    .footer__logo{
+      font-family: $title;
+      font-size: $sizeLogo;
+    }
+    .footer_restaurant{
+      display: flex;
+      flex-direction: column;
+    }
+      .footer__restaurant--proposition, .footer__restaurant--partner{
+        display: flex;
+        align-items: center;
+        p{
+          margin-block: 5px;
+        }
+      }
+}
+
+.footer__restaurant--proposition p{
+  margin-left: 7px;
+}
+
+.footer__restaurant--partner p{
+  margin-left: 3px;
+}
+
+.footer__restaurant--legal a, .footer__restaurant--contact a{
+  text-decoration: none;
+  color: $white;
+}
+
+.footer__restaurant--contact{
+  margin-bottom: 20px;
+  margin-block-start: 8px;
+}

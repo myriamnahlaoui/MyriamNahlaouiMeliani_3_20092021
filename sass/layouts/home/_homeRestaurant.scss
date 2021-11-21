@@ -1,0 +1,78 @@
+.restaurants{
+  background:$greyLight;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .restaurant__group{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .restaurant__group a{
+    text-decoration: none;
+    color:$black;
+  }
+  .restaurant__group figure{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .restaurant__group figure img{
+   height: 104px;
+   width: 200px;
+   object-fit: cover;
+   border-radius: 15px 15px 0px 0px;
+  }
+    .restaurant__group figcaption{
+      background: $white;
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      height: 54px;
+      border-radius: 0px 0px 15px 15px;
+    }
+       .restaurant__group figcaption h3{
+          font-size: $h3;
+          margin:10px 0px 0px 10px;
+        }
+        .restaurant__group figcaption p{
+          margin:5px 0px 0px 10px;
+        }
+        .restaurant__group i{
+          transform: translate(172px, -32px);
+          font-size: 0.8rem;
+        }
+}
+
+//suprression margin bottom
+.restaurant__la-palette-du-gout{
+  margin-bottom: 0px;
+}
+
+//réglages des images
+.restaurant__la-palette-du-gout img{
+  object-position: 0px -30px;
+}
+
+.restaurant__la-note-enchantee img{
+  object-position: 0px 0px;
+}
+
+.restaurant__a-la-francaise img{
+  object-position: 0px -30px;
+}
+
+.restaurant__le-delice-des-sens img{
+  object-position: 0px -33px;
+}
+
+//indicateur nouveau restaurant
+.restaurant__la-palette-du-gout--new, .restaurant__la-note-enchantee--new{
+  color: $greenFont;
+  font-weight: bold;
+  font-size: 0.7rem;
+  background: $mint;
+  width: 45px;
+  padding: 2px;
+  transform: translate(135px, 25px);
+}
