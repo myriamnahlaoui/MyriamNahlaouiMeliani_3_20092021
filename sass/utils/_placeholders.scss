@@ -20,7 +20,13 @@
   text-align: center;
 }
 
-
+//mise en forme 
+%flexRowSbetween{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
 //réglage du logo d'entête
 %logoEntete{

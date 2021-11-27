@@ -27,7 +27,11 @@
   background-color: $greyLight;
   h1{
     width: 200px;
-    margin: 40px auto 0px;
+    margin: 20px auto 0px;
+  }
+  p{
+    margin-right: 20px;
+    margin-left: 20px;
   }
   button{
     @include btn;

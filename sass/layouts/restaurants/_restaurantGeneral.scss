@@ -1,0 +1,13 @@
+.body__restaurant{
+  @extend %body;
+  font-family: $simple;
+  font-size: $normal;
+  h1{
+    font-family: $title;
+  }
+}
+
+.body__restaurant main, .body__restaurant footer{
+  transform: translateY(-36px);
+}
+

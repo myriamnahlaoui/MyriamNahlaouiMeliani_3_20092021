@@ -2,6 +2,9 @@
   @extend %flexColumn;
   width: 100%;
   margin-bottom: 20px;
+  h2{
+    margin-bottom: 10px;
+  }
 }
 
 .functioning__choice, .functioning__menu, .functioning__restaurant{
@@ -10,6 +13,9 @@
   justify-content: space-around;
   align-items: center;
   @include cardFunctioningMenu;
+  background: $greyLight;
+  margin-left: auto;
+  margin-right: auto;
   width: 248px;
   &:hover{
     background: $purpleLight;

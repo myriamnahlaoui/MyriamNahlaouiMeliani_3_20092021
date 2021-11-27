@@ -40,7 +40,10 @@
         }
         .restaurant__group i{
           transform: translate(172px, -32px);
-          font-size: 0.8rem;
+          font-size: $sizeHeart;
+        }
+        .restaurant__group a:nth-child(4){
+          margin-bottom: 30px;
         }
 }
 
