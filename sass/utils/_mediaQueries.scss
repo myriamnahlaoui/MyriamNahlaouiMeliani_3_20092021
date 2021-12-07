@@ -16,6 +16,7 @@
   }
 }
 
+//supprimer si pas utiliser
 @mixin xlarge {
   @media (min-width: 1280px) {
     @content;

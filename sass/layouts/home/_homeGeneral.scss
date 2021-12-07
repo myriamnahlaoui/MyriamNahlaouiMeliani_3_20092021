@@ -6,11 +6,8 @@ body{
 
 header, main, footer{
   @include large{
-    max-width: 1080px;
-    margin: auto;
-  }
-  @include xlarge{
     max-width: 1280px;
+    margin: auto;
   }
 }
 
