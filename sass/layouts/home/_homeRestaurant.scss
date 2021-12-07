@@ -3,10 +3,23 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  //media queries
+  h2{
+    @include large{
+     margin: 24px auto 0px auto;
+    }
+  }
   .restaurant__group{
     display: flex;
     flex-direction: column;
     margin: auto;
+    //media queries
+    @include medium{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 560px;
+    }
   }
   .restaurant__group a{
     text-decoration: none;
@@ -16,10 +29,11 @@
     display: flex;
     flex-direction: column;
     margin-top: 0px;
+    margin-inline: 0px;
   }
   .restaurant__group figure img{
-   height: 104px;
-   width: 200px;
+   height: 118px;
+   width: 236px;
    object-fit: cover;
    border-radius: 15px 15px 0px 0px;
   }
@@ -27,7 +41,7 @@
       background: $white;
       display: flex;
       flex-direction: column;
-      width: 200px;
+      width: 236px;
       height: 54px;
       border-radius: 0px 0px 15px 15px;
     }
@@ -39,8 +53,7 @@
           margin:5px 0px 0px 10px;
         }
         .restaurant__group i{
-          transform: translate(172px, -32px);
-          font-size: $sizeHeart;
+          @include heart;
         }
         .restaurant__group a:nth-child(4){
           margin-bottom: 30px;
@@ -54,19 +67,19 @@
 
 //réglages des images
 .restaurant__la-palette-du-gout img{
-  object-position: 0px -30px;
+  object-position: 0px -39px;
 }
 
 .restaurant__la-note-enchantee img{
-  object-position: 0px 0px;
+  object-position: 0px -108px;
 }
 
 .restaurant__a-la-francaise img{
-  object-position: 0px -30px;
+  object-position: 0px -38px;
 }
 
 .restaurant__le-delice-des-sens img{
-  object-position: 0px -33px;
+  object-position: 0px -44px;
 }
 
 //indicateur nouveau restaurant
@@ -77,5 +90,5 @@
   background: $mint;
   width: 45px;
   padding: 2px;
-  transform: translate(135px, 25px);
+  transform: translate(175px, 25px);
 }

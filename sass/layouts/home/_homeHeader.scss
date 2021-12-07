@@ -25,13 +25,27 @@
   @extend %flexColumnCenter;
   align-items: center;
   background-color: $greyLight;
+  min-width: 280px;
+  //media queries
+  @include mobilePlus{
+    margin: 0px
+  }
+  @include large{
+    height: 200px;
+    justify-content: center;
+  }
   h1{
     width: 200px;
     margin: 20px auto 0px;
+    @include medium{
+      width: 400px;
+      font-size: 1.5rem;
+    }
   }
   p{
     margin-right: 20px;
     margin-left: 20px;
+    
   }
   button{
     @include btn;
@@ -40,4 +54,3 @@
     @include hoverBtn;
   }
 }
-

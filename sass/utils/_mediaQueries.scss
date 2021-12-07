@@ -1,0 +1,23 @@
+@mixin mobilePlus {
+  @media (min-width: 379px){
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: 560px){
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: 768px){
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}

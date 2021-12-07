@@ -1,12 +1,17 @@
 @import "normalize.scss";
+@import "utils/mediaQueries";
 @import "utils/variables";
 @import "utils/placeholders";
 @import "components/buttons";
 @import "components/cards";
+@import "components/icons";
+@import "components/hearts";
+
 @import "layouts/home/homeGeneral";
 @import "layouts/home/homeHeader";
 @import "layouts/home/homeFunctioning";
 @import "layouts/home/homeRestaurant";
+
 @import "layouts/footer";
 
 @import "layouts/restaurants/restaurantGeneral";

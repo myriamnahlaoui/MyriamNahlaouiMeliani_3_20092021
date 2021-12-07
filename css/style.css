@@ -375,6 +375,18 @@ body {
   font-size: 0.75rem;
 }
 
+@media (min-width: 768px) {
+  header, main, footer {
+    max-width: 1080px;
+    margin: auto;
+  }
+}
+@media (min-width: 1280px) {
+  header, main, footer {
+    max-width: 1280px;
+  }
+}
+
 h1, h2, h3 {
   font-family: "Roboto";
 }
@@ -413,10 +425,28 @@ img {
 .header__presentation {
   align-items: center;
   background-color: #f7f7f7;
+  min-width: 280px;
+}
+@media (min-width: 379px) {
+  .header__presentation {
+    margin: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .header__presentation {
+    height: 200px;
+    justify-content: center;
+  }
 }
 .header__presentation h1 {
   width: 200px;
   margin: 20px auto 0px;
+}
+@media (min-width: 560px) {
+  .header__presentation h1 {
+    width: 400px;
+    font-size: 1.5rem;
+  }
 }
 .header__presentation p {
   margin-right: 20px;
@@ -440,8 +470,29 @@ img {
   width: 100%;
   margin-bottom: 20px;
 }
-.functioning h2, .functioning__group h2 {
+@media (min-width: 768px) {
+  .functioning h2, .functioning__group h2 {
+    margin: 10px auto 0px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .functioning {
+    height: 160px;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+}
+
+.functioning h2 {
   margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .functioning__group {
+    flex-direction: row;
+    margin: 20px 0px;
+  }
 }
 
 .functioning__choice, .functioning__menu, .functioning__restaurant {
@@ -462,6 +513,11 @@ img {
 .functioning__choice:hover, .functioning__menu:hover, .functioning__restaurant:hover {
   background: #F7F1FF;
 }
+@media (min-width: 768px) {
+  .functioning__choice, .functioning__menu, .functioning__restaurant {
+    width: 200px;
+  }
+}
 
 .functioning__choice--number, .functioning__menu--number, .functioning__restaurant--number {
   font-size: 12px;
@@ -480,6 +536,11 @@ img {
   transform: translateX(-22px);
   color: #808080;
 }
+@media (min-width: 768px) {
+  .functioning__choice--icone, .functioning__menu--icone, .functioning__restaurant--icone {
+    transform: translateX(-18px);
+  }
+}
 .functioning__choice--icone:hover, .functioning__menu--icone:hover, .functioning__restaurant--icone:hover {
   color: #9356dc;
 }
@@ -494,10 +555,23 @@ img {
   flex-direction: column;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .restaurants h2 {
+    margin: 24px auto 0px auto;
+  }
+}
 .restaurants .restaurant__group {
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+@media (min-width: 560px) {
+  .restaurants .restaurant__group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 560px;
+  }
 }
 .restaurants .restaurant__group a {
   text-decoration: none;
@@ -507,10 +581,11 @@ img {
   display: flex;
   flex-direction: column;
   margin-top: 0px;
+  margin-inline: 0px;
 }
 .restaurants .restaurant__group figure img {
-  height: 104px;
-  width: 200px;
+  height: 118px;
+  width: 236px;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
@@ -518,7 +593,7 @@ img {
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 236px;
   height: 54px;
   border-radius: 0px 0px 15px 15px;
 }
@@ -530,7 +605,7 @@ img {
   margin: 5px 0px 0px 10px;
 }
 .restaurants .restaurant__group i {
-  transform: translate(172px, -32px);
+  transform: translate(206px, -32px);
   font-size: 1rem;
 }
 .restaurants .restaurant__group a:nth-child(4) {
@@ -542,19 +617,19 @@ img {
 }
 
 .restaurant__la-palette-du-gout img {
-  object-position: 0px -30px;
+  object-position: 0px -39px;
 }
 
 .restaurant__la-note-enchantee img {
-  object-position: 0px 0px;
+  object-position: 0px -108px;
 }
 
 .restaurant__a-la-francaise img {
-  object-position: 0px -30px;
+  object-position: 0px -38px;
 }
 
 .restaurant__le-delice-des-sens img {
-  object-position: 0px -33px;
+  object-position: 0px -44px;
 }
 
 .restaurant__la-palette-du-gout--new, .restaurant__la-note-enchantee--new {
@@ -564,7 +639,7 @@ img {
   background: #99e2d0;
   width: 45px;
   padding: 2px;
-  transform: translate(135px, 25px);
+  transform: translate(175px, 25px);
 }
 
 footer {
@@ -577,13 +652,37 @@ footer .footer {
   flex-direction: column;
   margin-left: 10px;
 }
+@media (min-width: 379px) {
+  footer .footer {
+    margin-left: 0px;
+  }
+}
 footer .footer__logo {
   font-family: "Shrikhand";
   font-size: 1rem;
 }
-footer .footer_restaurant {
+@media (min-width: 379px) {
+  footer .footer__logo {
+    margin: auto;
+    margin-top: 12px;
+  }
+}
+footer .footer__restaurant {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 379px) {
+  footer .footer__restaurant {
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  footer .footer__restaurant {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 0px 20px 0px;
+  }
 }
 footer .footer__restaurant--proposition, footer .footer__restaurant--partner {
   display: flex;
@@ -591,6 +690,11 @@ footer .footer__restaurant--proposition, footer .footer__restaurant--partner {
 }
 footer .footer__restaurant--proposition p, footer .footer__restaurant--partner p {
   margin-block: 5px;
+}
+@media (min-width: 768px) {
+  footer .footer__restaurant--proposition p, footer .footer__restaurant--partner p {
+    margin-block: 0px;
+  }
 }
 
 .footer__restaurant--proposition p {
@@ -609,6 +713,11 @@ footer .footer__restaurant--proposition p, footer .footer__restaurant--partner p
 .footer__restaurant--contact {
   margin-bottom: 20px;
   margin-block-start: 8px;
+}
+@media (min-width: 768px) {
+  .footer__restaurant--contact {
+    margin-block-end: 0px;
+  }
 }
 
 .body__restaurant {

@@ -2,9 +2,28 @@
   @extend %flexColumn;
   width: 100%;
   margin-bottom: 20px;
-  h2{
-    margin-bottom: 10px;
+    h2{
+      @include large{
+        margin: 10px auto 0px auto;
+      }
+    }
+}
+//media queries
+.functioning{
+  @include large{
+    height: 160px;
+    justify-content: center;
+    margin-bottom: 0px;
   }
+}
+.functioning h2{
+  margin-bottom: 10px;
+}
+.functioning__group{
+   @include large{
+     flex-direction: row;
+     margin: 20px 0px;
+   }
 }
 
 .functioning__choice, .functioning__menu, .functioning__restaurant{
@@ -19,6 +38,9 @@
   width: 248px;
   &:hover{
     background: $purpleLight;
+  }
+  @include large{
+    width: 200px;
   }
 }
 
@@ -36,11 +58,7 @@
 }
 
 .functioning__choice--icone, .functioning__menu--icone, .functioning__restaurant--icone{
-  transform: translateX(-22px);
-  color: $greyBtn;
-  &:hover{
-    color:$purple;
-  }
+@include icon;
   ~p{
     width: 160px;
     transform: translateX(-14px);
