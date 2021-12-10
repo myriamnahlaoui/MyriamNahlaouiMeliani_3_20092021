@@ -1,5 +1,6 @@
 .header{
   @extend %flexColumn;
+  margin: auto;
   width: 100%;
 }
 
@@ -28,7 +29,7 @@
   min-width: 280px;
   //media queries
   @include mobilePlus{
-    margin: 0px
+    margin: 0px;
   }
   @include large{
     height: 200px;
@@ -45,7 +46,6 @@
   p{
     margin-right: 20px;
     margin-left: 20px;
-    
   }
   button{
     @include btn;

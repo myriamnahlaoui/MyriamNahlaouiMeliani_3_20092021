@@ -3,14 +3,14 @@ article{
   background: $greyLight;
   width: 100%;
   @extend %flexColumn;
-  border-radius: 35px 35px 0px 0px;
- 
+  margin: auto;
+  border-radius: 36px 36px 0px 0px;
   .menu__title{
     display: flex;
     align-items: center;
-    justify-content:space-between ;
+    justify-content:space-between;
     margin: 20px auto 0px auto;
-    min-width: 280px;
+    width: 100%;
   }
   .menu__title h1{
     letter-spacing: 0.05rem;
@@ -22,22 +22,31 @@ article{
   }
 }
 
+.header__background--la-note-enchantee ~ main{
+  margin-top: -150px;
+}
+
 //le menu: entrées, plats et desserts
 .menu{
 @extend %flexColumn;
+margin: 0px 10px;
 .menu__starter-group, .menu__main-course-group, .menu__dessert-group{
   display: flex;
   flex-direction: column;
   h2{
     font-weight: normal;
     margin: 10px 0px 10px 0px;
-    width: 16%;
+    width: 41px;
     border-bottom: solid $mint;
     }
     .menu__starter-description1, .menu__starter-description2, .menu__starter-description3, .menu__starter-description4, .menu__main-course-description1, .menu__main-course-description2, .menu__main-course-description3, .menu__dessert-description1, .menu__dessert-description2, .menu__dessert-description3{
     @include cardFunctioningMenu;
     @extend %flexRowSbetween;
     background: $white;
+    padding: 6px;
+    @include large{
+      padding: 10px;
+      }
     }
       h3, p{
         margin-block-start: 5px;
@@ -49,12 +58,16 @@ article{
 //bouton "Commander"
 .menu__order{
   @include btn;
+  @include large{
+    width: 250px;
+    padding: 16px 18px;
+  }
   width: 150px;
   margin: 20px auto 40px auto;
 }
 
 .menu__order:hover{
-  @include hoverBtn
+  @include hoverBtn;
 }
 
 //rognage du texte et ajout de "..."
@@ -66,8 +79,6 @@ article{
   direction: ltr;
 }
 
-//ajout d'un espace entre le plat et le prix - restaurant à la française/plat 1
-//A modifier/supprimer pour tablette et desktop
 .menu__main-course-description1--space{
   margin-right: 10px;
 }

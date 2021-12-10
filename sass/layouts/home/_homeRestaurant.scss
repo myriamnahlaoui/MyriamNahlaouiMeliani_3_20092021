@@ -52,7 +52,7 @@
         .restaurant__group figcaption p{
           margin:5px 0px 0px 10px;
         }
-        .restaurant__group i{
+        .restaurant__group i:nth-child(1){
           @include heart;
         }
         .restaurant__group a:nth-child(4){

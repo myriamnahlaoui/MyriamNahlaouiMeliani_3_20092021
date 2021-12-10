@@ -6,41 +6,23 @@ footer{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    @include mobilePlus{
-      margin-left: 0px;
+    @include large{
+      padding: 20px;
     }
   }
     .footer__logo{
       font-family: $title;
       font-size: $sizeLogo;
-      @include mobilePlus{
-      margin: auto;
-      margin-top: 12px;
-      }
     }
     .footer__restaurant{
       display: flex;
       flex-direction: column;
-      //media queries
-      @include mobilePlus{
-        margin: auto;
-      }
-      @include large{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        margin: 0px 0px 20px 0px;
-      }
     }
       .footer__restaurant--proposition, .footer__restaurant--partner{
         display: flex;
         align-items: center;
         p{
           margin-block: 5px;
-          //media queries
-          @include large{
-            margin-block: 0px;
-          }
         }
       }
 }

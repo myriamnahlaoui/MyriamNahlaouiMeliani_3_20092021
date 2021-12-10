@@ -1,8 +1,24 @@
-.header__background--la-palette-du-gout, .header__background--la-note-enchantee, .header__background--a-la-francaise, .header__background--le-delice-des-sens{
-  background: url("/images/restaurants/laPaletteDuGout.jpg") no-repeat;
-  background-size: contain;
-  height: 186px;
+%background{
+  min-height: 186px;
   display: flex;
-  min-width: 280px; 
-  //changer le min-width en fonction du breakpoint
+  width: 100%;
+  object-fit: cover
+}
+
+.header__background--la-palette-du-gout img{
+  @extend %background;
+  object-position: 0px 0px;
+}
+
+.header__background--la-note-enchantee img{
+  @extend %background;
+  object-position: 0px -73px;
+}
+
+.header__background--a-la-francaise img{
+  @extend %background;
+}
+
+.header__background--le-delice-des-sens img{
+  @extend %background;
 }
