@@ -369,9 +369,14 @@ template {
   width: 120px;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   font-family: "Roboto";
   font-size: 0.75rem;
+  height: 100%;
 }
 
 @media (min-width: 768px) {

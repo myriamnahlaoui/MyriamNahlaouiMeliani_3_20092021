@@ -1,7 +1,12 @@
+html{
+  height: 100vh;
+}
+
 body{
   @extend %body;
   font-family: $simple;
   font-size: $normal;
+  height: 100%;
 }
 
 header, main, footer{
