@@ -19,6 +19,10 @@
       flex-wrap: wrap;
       justify-content: space-around;
       width: 560px;
+      @include large{
+        width: 768px;
+        justify-content: space-between;
+      }
     }
   }
   .restaurant__group a{
@@ -30,20 +34,31 @@
     flex-direction: column;
     margin-top: 0px;
     margin-inline: 0px;
+    padding-bottom: 8px;
+    @include large{
+      padding-bottom: 35px;
+    }
   }
   .restaurant__group figure img{
-   height: 118px;
-   width: 236px;
+   height: 134px;
+   width: 263px;
    object-fit: cover;
    border-radius: 15px 15px 0px 0px;
+   @include mobilePlus{
+     height: 160px;
+     width: 348px;
+   }
   }
     .restaurant__group figcaption{
       background: $white;
       display: flex;
       flex-direction: column;
-      width: 236px;
+      width: 263px;
       height: 54px;
       border-radius: 0px 0px 15px 15px;
+      @include mobilePlus{
+        width: 348px;
+      }
     }
        .restaurant__group figcaption h3{
           font-size: $h3;
@@ -67,19 +82,31 @@
 
 //réglages des images
 .restaurant__la-palette-du-gout img{
-  object-position: 0px -39px;
+  object-position: 0px -43px;
+  @include mobilePlus{
+    object-position: 0px -71px;
+  }
 }
 
 .restaurant__la-note-enchantee img{
-  object-position: 0px -108px;
+  object-position: 0px -120px;
+  @include mobilePlus{
+    object-position: 0px -173px;
+  }
 }
 
 .restaurant__a-la-francaise img{
   object-position: 0px -38px;
+  @include mobilePlus{
+    object-position: 0px -62px;
+  }
 }
 
 .restaurant__le-delice-des-sens img{
   object-position: 0px -44px;
+  @include mobilePlus{
+    object-position: 0px -74px;
+  }
 }
 
 //indicateur nouveau restaurant
@@ -88,7 +115,11 @@
   font-weight: bold;
   font-size: 0.7rem;
   background: $mint;
-  width: 45px;
-  padding: 2px;
-  transform: translate(175px, 25px);
+  width: 50px;
+  padding: 4px;
+  text-align: center;
+  transform: translate(192px, 32px);
+  @include mobilePlus{
+    transform: translate(271px, 27px)
+  }
 }

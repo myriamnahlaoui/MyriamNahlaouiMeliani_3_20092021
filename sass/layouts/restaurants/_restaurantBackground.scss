@@ -1,24 +1,68 @@
 %background{
-  min-height: 186px;
+  height: 208px;
   display: flex;
   width: 100%;
-  object-fit: cover
+  object-fit: cover;
+  @include mobilePlus{
+    height: 278px;
+  }
 }
 
 .header__background--la-palette-du-gout img{
   @extend %background;
-  object-position: 0px 0px;
+  @include mobilePlus{
+    object-position: 0px 0px;
+  }
+  @include medium{
+    object-position: 0px -64px;
+  }
+  @include large{
+    object-position: 0px -202px;
+  }
+  @include xlarge{
+    object-position: 0px -292px;
+  }
 }
 
 .header__background--la-note-enchantee img{
   @extend %background;
   object-position: 0px -73px;
+  @include mobilePlus{
+    object-position: 0px -110px;
+  }
+  @include medium{
+    object-position: 0px -269px;
+  }
+  @include large{
+    object-position: 0px -466px;
+  }
+  @include xlarge{
+    object-position: 0px -610px;
+  }
 }
 
 .header__background--a-la-francaise img{
   @extend %background;
+  @include medium{
+    object-position: 0px -102px;
+  }
+  @include large{
+    object-position: 0px -200px;
+  }
+  @include xlarge{
+    object-position: 0px -299px;
+  }
 }
 
 .header__background--le-delice-des-sens img{
   @extend %background;
+  @include medium{
+    object-position: 0px -120px;
+  }
+  @include large{
+    object-position: 0px -251px;
+  }
+  @include xlarge{
+    object-position: 0px -335px;
+  }
 }

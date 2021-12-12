@@ -22,10 +22,6 @@ article{
   }
 }
 
-.header__background--la-note-enchantee ~ main{
-  margin-top: -150px;
-}
-
 //le menu: entrées, plats et desserts
 .menu{
 @extend %flexColumn;

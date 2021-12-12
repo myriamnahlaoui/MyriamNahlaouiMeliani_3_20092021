@@ -1,6 +1,8 @@
 @mixin heart{
-  transform: translate(206px, -32px);
+  transform: translate(234px, -32px);
   font-size: $sizeHeart;
-  
+  @include mobilePlus{
+    transform: translate(316px, -32px)
+  }
 }
 

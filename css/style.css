@@ -393,10 +393,20 @@ h1, h2, h3 {
 h1 {
   font-size: 1.125rem;
 }
+@media (min-width: 1080px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 
 h2 {
   font-size: 1rem;
   margin: 35px 0px 0px 15px;
+}
+@media (min-width: 1080px) {
+  h2 {
+    font-size: 1.3rem;
+  }
 }
 
 img {
@@ -573,6 +583,12 @@ img {
     width: 560px;
   }
 }
+@media (min-width: 560px) and (min-width: 768px) {
+  .restaurants .restaurant__group {
+    width: 768px;
+    justify-content: space-between;
+  }
+}
 .restaurants .restaurant__group a {
   text-decoration: none;
   color: #000000;
@@ -582,20 +598,37 @@ img {
   flex-direction: column;
   margin-top: 0px;
   margin-inline: 0px;
+  padding-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .restaurants .restaurant__group figure {
+    padding-bottom: 35px;
+  }
 }
 .restaurants .restaurant__group figure img {
-  height: 118px;
-  width: 236px;
+  height: 134px;
+  width: 263px;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
+}
+@media (min-width: 379px) {
+  .restaurants .restaurant__group figure img {
+    height: 160px;
+    width: 348px;
+  }
 }
 .restaurants .restaurant__group figcaption {
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  width: 236px;
+  width: 263px;
   height: 54px;
   border-radius: 0px 0px 15px 15px;
+}
+@media (min-width: 379px) {
+  .restaurants .restaurant__group figcaption {
+    width: 348px;
+  }
 }
 .restaurants .restaurant__group figcaption h3 {
   font-size: 0.8rem;
@@ -605,8 +638,13 @@ img {
   margin: 5px 0px 0px 10px;
 }
 .restaurants .restaurant__group i:nth-child(1) {
-  transform: translate(206px, -32px);
+  transform: translate(234px, -32px);
   font-size: 1rem;
+}
+@media (min-width: 379px) {
+  .restaurants .restaurant__group i:nth-child(1) {
+    transform: translate(316px, -32px);
+  }
 }
 .restaurants .restaurant__group a:nth-child(4) {
   margin-bottom: 30px;
@@ -617,19 +655,39 @@ img {
 }
 
 .restaurant__la-palette-du-gout img {
-  object-position: 0px -39px;
+  object-position: 0px -43px;
+}
+@media (min-width: 379px) {
+  .restaurant__la-palette-du-gout img {
+    object-position: 0px -71px;
+  }
 }
 
 .restaurant__la-note-enchantee img {
-  object-position: 0px -108px;
+  object-position: 0px -120px;
+}
+@media (min-width: 379px) {
+  .restaurant__la-note-enchantee img {
+    object-position: 0px -173px;
+  }
 }
 
 .restaurant__a-la-francaise img {
   object-position: 0px -38px;
 }
+@media (min-width: 379px) {
+  .restaurant__a-la-francaise img {
+    object-position: 0px -62px;
+  }
+}
 
 .restaurant__le-delice-des-sens img {
   object-position: 0px -44px;
+}
+@media (min-width: 379px) {
+  .restaurant__le-delice-des-sens img {
+    object-position: 0px -74px;
+  }
 }
 
 .restaurant__la-palette-du-gout--new, .restaurant__la-note-enchantee--new {
@@ -637,9 +695,15 @@ img {
   font-weight: bold;
   font-size: 0.7rem;
   background: #99e2d0;
-  width: 45px;
-  padding: 2px;
-  transform: translate(175px, 25px);
+  width: 50px;
+  padding: 4px;
+  text-align: center;
+  transform: translate(192px, 32px);
+}
+@media (min-width: 379px) {
+  .restaurant__la-palette-du-gout--new, .restaurant__la-note-enchantee--new {
+    transform: translate(271px, 27px);
+  }
 }
 
 footer {
@@ -705,7 +769,7 @@ footer .footer__restaurant--proposition p, footer .footer__restaurant--partner p
 }
 
 .body__restaurant main, .body__restaurant footer {
-  transform: translateY(-36px);
+  transform: translateY(-41px);
 }
 
 @media (min-width: 768px) {
@@ -734,18 +798,92 @@ footer .footer__restaurant--proposition p, footer .footer__restaurant--partner p
 }
 
 .header__background--le-delice-des-sens img, .header__background--a-la-francaise img, .header__background--la-note-enchantee img, .header__background--la-palette-du-gout img {
-  min-height: 186px;
+  height: 208px;
   display: flex;
   width: 100%;
   object-fit: cover;
 }
+@media (min-width: 379px) {
+  .header__background--le-delice-des-sens img, .header__background--a-la-francaise img, .header__background--la-note-enchantee img, .header__background--la-palette-du-gout img {
+    height: 278px;
+  }
+}
 
-.header__background--la-palette-du-gout img {
-  object-position: 0px 0px;
+@media (min-width: 379px) {
+  .header__background--la-palette-du-gout img {
+    object-position: 0px 0px;
+  }
+}
+@media (min-width: 560px) {
+  .header__background--la-palette-du-gout img {
+    object-position: 0px -64px;
+  }
+}
+@media (min-width: 768px) {
+  .header__background--la-palette-du-gout img {
+    object-position: 0px -202px;
+  }
+}
+@media (min-width: 1080px) {
+  .header__background--la-palette-du-gout img {
+    object-position: 0px -292px;
+  }
 }
 
 .header__background--la-note-enchantee img {
   object-position: 0px -73px;
+}
+@media (min-width: 379px) {
+  .header__background--la-note-enchantee img {
+    object-position: 0px -110px;
+  }
+}
+@media (min-width: 560px) {
+  .header__background--la-note-enchantee img {
+    object-position: 0px -269px;
+  }
+}
+@media (min-width: 768px) {
+  .header__background--la-note-enchantee img {
+    object-position: 0px -466px;
+  }
+}
+@media (min-width: 1080px) {
+  .header__background--la-note-enchantee img {
+    object-position: 0px -610px;
+  }
+}
+
+@media (min-width: 560px) {
+  .header__background--a-la-francaise img {
+    object-position: 0px -102px;
+  }
+}
+@media (min-width: 768px) {
+  .header__background--a-la-francaise img {
+    object-position: 0px -200px;
+  }
+}
+@media (min-width: 1080px) {
+  .header__background--a-la-francaise img {
+    object-position: 0px -299px;
+  }
+}
+
+@media (min-width: 560px) {
+  .header__background--le-delice-des-sens img {
+    object-position: 0px -120px;
+  }
+}
+@media (min-width: 768px) {
+  .header__background--le-delice-des-sens img {
+    object-position: 0px -251px;
+  }
+}
+@media (min-width: 1080px) {
+  .header__background--le-delice-des-sens img {
+    object-position: 0px -335px;
+  }
 }
 
 article {
@@ -768,10 +906,6 @@ article .menu__title h1 {
 article .menu__title i {
   font-size: 1rem;
   margin-right: 15px;
-}
-
-.header__background--la-note-enchantee ~ main {
-  margin-top: -150px;
 }
 
 .menu {
