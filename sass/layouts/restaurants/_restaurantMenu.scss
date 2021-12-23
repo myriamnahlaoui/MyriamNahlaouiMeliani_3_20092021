@@ -26,7 +26,7 @@ article{
 .menu{
 @extend %flexColumn;
 margin: 0px 10px;
-.menu__starter-group, .menu__main-course-group, .menu__dessert-group{
+.menu__group{
   display: flex;
   flex-direction: column;
   h2{
@@ -35,7 +35,7 @@ margin: 0px 10px;
     width: 41px;
     border-bottom: solid $mint;
     }
-    .menu__starter-description1, .menu__starter-description2, .menu__starter-description3, .menu__starter-description4, .menu__main-course-description1, .menu__main-course-description2, .menu__main-course-description3, .menu__dessert-description1, .menu__dessert-description2, .menu__dessert-description3{
+    .menu__description{
     @include cardFunctioningMenu;
     @extend %flexRowSbetween;
     background: $white;
@@ -67,7 +67,7 @@ margin: 0px 10px;
 }
 
 //rognage du texte et ajout de "..."
-.menu__main-course-description1--ellipsis{
+.menu__description--ellipsis{
   width: 221px;
   white-space: nowrap;
   overflow: hidden;
@@ -75,6 +75,3 @@ margin: 0px 10px;
   direction: ltr;
 }
 
-.menu__main-course-description1--space{
-  margin-right: 10px;
-}

@@ -355,7 +355,7 @@ template {
   text-align: center;
 }
 
-.menu .menu__starter-group .menu__starter-description1, .menu .menu__starter-group .menu__starter-description2, .menu .menu__starter-group .menu__starter-description3, .menu .menu__starter-group .menu__starter-description4, .menu .menu__starter-group .menu__main-course-description1, .menu .menu__starter-group .menu__main-course-description2, .menu .menu__starter-group .menu__main-course-description3, .menu .menu__starter-group .menu__dessert-description1, .menu .menu__starter-group .menu__dessert-description2, .menu .menu__starter-group .menu__dessert-description3, .menu .menu__main-course-group .menu__starter-description1, .menu .menu__main-course-group .menu__starter-description2, .menu .menu__main-course-group .menu__starter-description3, .menu .menu__main-course-group .menu__starter-description4, .menu .menu__main-course-group .menu__main-course-description1, .menu .menu__main-course-group .menu__main-course-description2, .menu .menu__main-course-group .menu__main-course-description3, .menu .menu__main-course-group .menu__dessert-description1, .menu .menu__main-course-group .menu__dessert-description2, .menu .menu__main-course-group .menu__dessert-description3, .menu .menu__dessert-group .menu__starter-description1, .menu .menu__dessert-group .menu__starter-description2, .menu .menu__dessert-group .menu__starter-description3, .menu .menu__dessert-group .menu__starter-description4, .menu .menu__dessert-group .menu__main-course-description1, .menu .menu__dessert-group .menu__main-course-description2, .menu .menu__dessert-group .menu__main-course-description3, .menu .menu__dessert-group .menu__dessert-description1, .menu .menu__dessert-group .menu__dessert-description2, .menu .menu__dessert-group .menu__dessert-description3 {
+.menu .menu__group .menu__description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -911,17 +911,17 @@ article .menu__title i {
 .menu {
   margin: 0px 10px;
 }
-.menu .menu__starter-group, .menu .menu__main-course-group, .menu .menu__dessert-group {
+.menu .menu__group {
   display: flex;
   flex-direction: column;
 }
-.menu .menu__starter-group h2, .menu .menu__main-course-group h2, .menu .menu__dessert-group h2 {
+.menu .menu__group h2 {
   font-weight: normal;
   margin: 10px 0px 10px 0px;
   width: 41px;
   border-bottom: solid #99e2d0;
 }
-.menu .menu__starter-group .menu__starter-description1, .menu .menu__starter-group .menu__starter-description2, .menu .menu__starter-group .menu__starter-description3, .menu .menu__starter-group .menu__starter-description4, .menu .menu__starter-group .menu__main-course-description1, .menu .menu__starter-group .menu__main-course-description2, .menu .menu__starter-group .menu__main-course-description3, .menu .menu__starter-group .menu__dessert-description1, .menu .menu__starter-group .menu__dessert-description2, .menu .menu__starter-group .menu__dessert-description3, .menu .menu__main-course-group .menu__starter-description1, .menu .menu__main-course-group .menu__starter-description2, .menu .menu__main-course-group .menu__starter-description3, .menu .menu__main-course-group .menu__starter-description4, .menu .menu__main-course-group .menu__main-course-description1, .menu .menu__main-course-group .menu__main-course-description2, .menu .menu__main-course-group .menu__main-course-description3, .menu .menu__main-course-group .menu__dessert-description1, .menu .menu__main-course-group .menu__dessert-description2, .menu .menu__main-course-group .menu__dessert-description3, .menu .menu__dessert-group .menu__starter-description1, .menu .menu__dessert-group .menu__starter-description2, .menu .menu__dessert-group .menu__starter-description3, .menu .menu__dessert-group .menu__starter-description4, .menu .menu__dessert-group .menu__main-course-description1, .menu .menu__dessert-group .menu__main-course-description2, .menu .menu__dessert-group .menu__main-course-description3, .menu .menu__dessert-group .menu__dessert-description1, .menu .menu__dessert-group .menu__dessert-description2, .menu .menu__dessert-group .menu__dessert-description3 {
+.menu .menu__group .menu__description {
   margin-bottom: 15px;
   border-radius: 15px;
   box-shadow: -5px 7px 8px 0px #efefef;
@@ -930,11 +930,11 @@ article .menu__title i {
   padding: 6px;
 }
 @media (min-width: 768px) {
-  .menu .menu__starter-group .menu__starter-description1, .menu .menu__starter-group .menu__starter-description2, .menu .menu__starter-group .menu__starter-description3, .menu .menu__starter-group .menu__starter-description4, .menu .menu__starter-group .menu__main-course-description1, .menu .menu__starter-group .menu__main-course-description2, .menu .menu__starter-group .menu__main-course-description3, .menu .menu__starter-group .menu__dessert-description1, .menu .menu__starter-group .menu__dessert-description2, .menu .menu__starter-group .menu__dessert-description3, .menu .menu__main-course-group .menu__starter-description1, .menu .menu__main-course-group .menu__starter-description2, .menu .menu__main-course-group .menu__starter-description3, .menu .menu__main-course-group .menu__starter-description4, .menu .menu__main-course-group .menu__main-course-description1, .menu .menu__main-course-group .menu__main-course-description2, .menu .menu__main-course-group .menu__main-course-description3, .menu .menu__main-course-group .menu__dessert-description1, .menu .menu__main-course-group .menu__dessert-description2, .menu .menu__main-course-group .menu__dessert-description3, .menu .menu__dessert-group .menu__starter-description1, .menu .menu__dessert-group .menu__starter-description2, .menu .menu__dessert-group .menu__starter-description3, .menu .menu__dessert-group .menu__starter-description4, .menu .menu__dessert-group .menu__main-course-description1, .menu .menu__dessert-group .menu__main-course-description2, .menu .menu__dessert-group .menu__main-course-description3, .menu .menu__dessert-group .menu__dessert-description1, .menu .menu__dessert-group .menu__dessert-description2, .menu .menu__dessert-group .menu__dessert-description3 {
+  .menu .menu__group .menu__description {
     padding: 10px;
   }
 }
-.menu .menu__starter-group h3, .menu .menu__starter-group p, .menu .menu__main-course-group h3, .menu .menu__main-course-group p, .menu .menu__dessert-group h3, .menu .menu__dessert-group p {
+.menu .menu__group h3, .menu .menu__group p {
   margin-block-start: 5px;
   margin-block-end: 5px;
 }
@@ -962,16 +962,12 @@ article .menu__title i {
   opacity: 0.7;
 }
 
-.menu__main-course-description1--ellipsis {
+.menu__description--ellipsis {
   width: 221px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   direction: ltr;
-}
-
-.menu__main-course-description1--space {
-  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
