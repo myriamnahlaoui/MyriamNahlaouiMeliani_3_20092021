@@ -1,0 +1,46 @@
+//carte partie fonctionnement de l'acceuil & menu
+@mixin cardFunctioningMenu {
+  margin-bottom: 15px;
+  border-radius: 15px;
+  box-shadow: -5px 7px 8px 0px $greypearl;
+  /*padding: 0px 10px 0px 10px;*/
+}
+
+//coeur
+@mixin heart{
+  transform: translate(234px, -32px);
+  font-size: $sizeHeart;
+  position: relative;
+  @include mobilePlus{
+    transform: translate(316px, -32px)
+  }
+}
+
+//icones partie fonctionnement de la page accueil
+@mixin icon{
+  transform: translateX(-22px);
+  color: $greyBtn;
+  //media queries
+  @include large{
+    transform: translateX(-18px);
+  }
+  &:hover{
+    color:$purple;
+  }
+}
+
+//boutons
+@mixin btn {
+  border: none;
+  background: linear-gradient($pink, $purple);
+  color: $white;
+  padding: 12px 18px;
+  border-radius: 25px;
+  margin: 10px 0px 40px 0px;
+  box-shadow: -5px 5px 15px 0px $greyBtn;
+}
+
+@mixin hoverBtn{
+  box-shadow: -5px 5px 4px 0px #808080;
+  opacity: 0.7;
+}
