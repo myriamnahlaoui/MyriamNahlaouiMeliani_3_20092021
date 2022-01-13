@@ -44,6 +44,7 @@
    width: 263px;
    object-fit: cover;
    border-radius: 15px 15px 0px 0px;
+   z-index: 100;
    @include mobilePlus{
      height: 160px;
      width: 348px;
@@ -67,7 +68,7 @@
         .restaurant__group figcaption p{
           margin:5px 0px 0px 10px;
         }
-        .restaurant__group i:nth-child(1){
+        .restaurant__group i{
           @include heart;
         }
         .restaurant__group a:nth-child(4){
@@ -123,3 +124,8 @@
     transform: translate(271px, 27px)
   }
 }
+
+//animations
+
+//coeur
+

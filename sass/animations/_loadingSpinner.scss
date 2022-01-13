@@ -1,0 +1,74 @@
+.loading{
+  background: $white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  animation: loading 3s ease-in both ;
+}
+
+.loading__icone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  
+}
+
+.loading__icone i{
+  font-size: 100px;
+  color: purple;
+  animation: spinner 3s both reverse;
+}
+
+@keyframes loading {
+  0%{
+    opacity: 0.9;
+    z-index: 9999;
+  }
+  50%{
+    opacity: 0.9;
+    z-index: 9999;
+  }
+  75%{
+    opacity: 0.9;
+    z-index: 9999;
+  }
+  99%{
+    opacity: 0.9;
+    z-index: 9999;
+  }
+  100%{
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+@keyframes spinner {
+  0%{
+    opacity: 1;
+    transform: rotate(360deg);
+    z-index: 9999;
+  }
+  50%{
+    opacity: 1;
+    z-index: 9999;
+  }
+  75%{
+    opacity: 1;
+    z-index: 9999;
+  }
+  99%{
+    opacity: 1;
+    z-index: 9999;
+  }
+  100%{
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+

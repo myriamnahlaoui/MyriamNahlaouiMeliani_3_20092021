@@ -3,7 +3,6 @@
   margin-bottom: 15px;
   border-radius: 15px;
   box-shadow: -5px 7px 8px 0px $greypearl;
-  /*padding: 0px 10px 0px 10px;*/
 }
 
 //coeur
@@ -32,15 +31,25 @@
 //boutons
 @mixin btn {
   border: none;
-  background: linear-gradient($pink, $purple);
+  background: $gradient;
   color: $white;
   padding: 12px 18px;
   border-radius: 25px;
   margin: 10px 0px 40px 0px;
   box-shadow: -5px 5px 15px 0px $greyBtn;
+  z-index: 100;
 }
 
 @mixin hoverBtn{
   box-shadow: -5px 5px 4px 0px #808080;
   opacity: 0.7;
+}
+
+//text coupé avec "..."
+@mixin ellipsis($width){
+  width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
 }

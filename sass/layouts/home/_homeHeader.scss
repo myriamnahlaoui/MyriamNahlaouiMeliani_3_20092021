@@ -20,6 +20,10 @@
     width: 110px;
     background-color: $grey;
   }
+  ::placeholder{
+    color: black;
+    font-weight: bold;
+  }
 }
 
 .header__presentation{

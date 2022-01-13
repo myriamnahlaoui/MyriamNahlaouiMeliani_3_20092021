@@ -42,7 +42,7 @@ margin: 0px 10px;
     padding: 6px;
     @include large{
       padding: 10px;
-      }
+      } 
     }
       h3, p{
         margin-block-start: 5px;
@@ -66,12 +66,15 @@ margin: 0px 10px;
   @include hoverBtn;
 }
 
+/*curseur de la souris
+.menu__description:hover{
+  cursor: pointer;
+}*/
+
+
 //rognage du texte et ajout de "..."
 .menu__description--ellipsis{
-  width: 221px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  direction: ltr;
+  @include ellipsis(220px)
 }
+
 

@@ -38,11 +38,13 @@ footer{
 .footer__restaurant--legal a, .footer__restaurant--contact a{
   text-decoration: none;
   color: $white;
+  z-index: 100;
 }
 
 .footer__restaurant--contact{
   margin-bottom: 20px;
   margin-block-start: 8px;
+  z-index: 100;
   //media queries
   @include large{
     margin-block-end: 0px;

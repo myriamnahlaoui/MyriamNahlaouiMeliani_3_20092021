@@ -1,0 +1,78 @@
+//background checkbox
+.menu__description--price::before{
+  content: "";
+  border-radius: 0px 10px 10px 0px;
+  background-color: #99e2d0;
+  padding: 12px;
+  position: absolute;
+  width: 28px;
+  height: 34px;
+  transform: translate(-26px, -10px);
+  @include large{
+    width: 34px;
+    height: 42px;
+    transform: translate(-27px, -14px);
+  }
+  animation-name: slideIn;
+  animation-duration: 2s;
+  display: none;
+}
+
+//icone check
+.menu__description--price::after{
+  font-family: "Font Awesome 5 free";
+  content: "\f058";
+  font-size: 18px;
+  font-weight: 900;
+  color:$white;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  top: -14px;
+  left: -8px;
+  animation-name: rotate;
+  animation-duration: 2s;
+  display: none;
+}
+
+//animation checkbox
+@keyframes slideIn {
+   0%{
+    opacity: 0;
+    transform: translateX(0px);
+    
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(-27px);
+  }
+  100%{
+    opacity: 1;
+    transform:translateX(0px);
+  }
+}
+
+
+//animation check
+@keyframes rotate {
+  from{
+    opacity: 0;
+    transform: translateX(100px) rotate(5turn);
+  }
+  to{
+    opacity: 1;
+    
+  }
+}
+
+
+
+/*lors du passage de la souris sur description des plat, le before et after s'animent lors du hover*/
+.menu__description:hover .menu__description--price::before{
+  display: block;
+}
+
+.menu__description:hover .menu__description--price::after{
+  display: block;
+}
+
