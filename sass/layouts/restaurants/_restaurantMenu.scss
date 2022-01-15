@@ -35,20 +35,25 @@ margin: 0px 10px;
     width: 41px;
     border-bottom: solid $mint;
     }
-    .menu__description{
-    @include cardFunctioningMenu;
-    @extend %flexRowSbetween;
-    background: $white;
-    padding: 6px;
-    @include large{
-      padding: 10px;
-      } 
+    .menu__group--description{
+      display: flex;
+     
     }
-      h3, p{
-        margin-block-start: 5px;
-        margin-block-end: 5px;
+      .menu__description{
+      @include cardFunctioningMenu;
+      @extend %flexRowSbetween;
+      background: $white;
+      padding: 6px;
+      width: 96%;
+      @include large{
+        padding: 10px;
+        } 
       }
-}
+        h3, p{
+          margin-block-start: 5px;
+          margin-block-end: 5px;
+        }
+  }
 }
 
 //bouton "Commander"

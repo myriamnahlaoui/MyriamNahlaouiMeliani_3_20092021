@@ -40,10 +40,22 @@
   &:hover{
     background: $purpleLight;
   }
+  &:hover .functioning__choice--icone{
+    color: $purple;
+  }
+  &:hover .functioning__menu--icone{
+    color: $purple;
+  }
+  &:hover .functioning__restaurant--icone{
+    color: $purple;
+  }
   @include large{
     width: 200px;
   }
 }
+
+
+
 
 .functioning__choice--number, .functioning__menu--number, .functioning__restaurant--number{
   font-size: 12px;
@@ -51,7 +63,10 @@
   border-radius: 50px;
   height: 22px;
   width: 22px;
-  transform: translateX(-22px);
+  transform: translateX(-16px);
+  @include large{
+    transform: translateX(-12px);
+  }
   p{
     color:$white;
     transform: translate(8px,-7px);
@@ -63,7 +78,11 @@
   ~p{
     width: 160px;
     transform: translateX(-14px);
+    @include large{
+      text-align: center;
+    }
   }
 }
+
 
 

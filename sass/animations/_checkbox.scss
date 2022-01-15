@@ -1,78 +1,97 @@
-//background checkbox
-.menu__description--price::before{
-  content: "";
+/*.menu__description--contenair-check{
   border-radius: 0px 10px 10px 0px;
   background-color: #99e2d0;
   padding: 12px;
-  position: absolute;
   width: 28px;
   height: 34px;
-  transform: translate(-26px, -10px);
-  @include large{
-    width: 34px;
-    height: 42px;
-    transform: translate(-27px, -14px);
-  }
-  animation-name: slideIn;
-  animation-duration: 2s;
-  display: none;
-}
+  
 
-//icone check
-.menu__description--price::after{
-  font-family: "Font Awesome 5 free";
-  content: "\f058";
-  font-size: 18px;
-  font-weight: 900;
-  color:$white;
-  position: relative;
-  width: 18px;
-  height: 18px;
-  top: -14px;
-  left: -8px;
-  animation-name: rotate;
-  animation-duration: 2s;
-  display: none;
-}
+}*/
 
-//animation checkbox
-@keyframes slideIn {
-   0%{
-    opacity: 0;
-    transform: translateX(0px);
-    
-  }
-  50%{
-    opacity: 1;
-    transform: translateX(-27px);
+
+//.menu__group--description::after
+/*
+.menu__description--contenair-check{
+    border-radius: 0px 10px 10px 0px;
+    background-color: #99e2d0;
+    padding: 12px;
+    width: 28px;
+    height: 34px;
+    position: absolute;
+    left: 78%;
+    //visibility: hidden;
+    animation: animationCheckbox 2s ease-in-out;
+}*/
+
+/*
+.menu__description--check{
+  position:relative;
+  left: 100%;
+  z-index: 1000;
+  font-size: 20px;
+  color: red;
+ // visibility: hidden;
+  animation: animationCheck 2s ease-in-out;
+}*/
+
+@keyframes animationCheckbox {
+  0%{
+    left: 100%;
+    visibility: visible;
   }
   100%{
-    opacity: 1;
-    transform:translateX(0px);
+    left: 78%;
   }
 }
 
-
-//animation check
-@keyframes rotate {
-  from{
-    opacity: 0;
-    transform: translateX(100px) rotate(5turn);
+@keyframes animationCheck {
+  0%{
+    transform: rotate(0deg);
+    //top: 6px;
+    //visibility: visible;
   }
-  to{
-    opacity: 1;
-    
+  30%{
+    transform: rotate(100deg);
+  }
+  50%{
+    transform: rotate(180deg);
+    top: 3px;
+  }
+  100%{
+    transform: rotate(360deg);
+    //top: 6px;
   }
 }
 
+.menu__group--description:hover .menu__description--contenair-check{
+  border-radius: 0px 10px 10px 0px;
+  background-color: #99e2d0;
+  padding: 12px;
+  width: 28px;
+  height: 34px;
+  height: 34px;
+  position: absolute;
+  left: 78%;
+  //visibility: hidden;
+  animation: animationCheckbox 2s;
+}
 
+.menu__group--description:hover .menu__description--check i{
 
-/*lors du passage de la souris sur description des plat, le before et after s'animent lors du hover*/
-.menu__description:hover .menu__description--price::before{
+ // visibility: hidden;
   display: block;
+  animation: animationCheck 2s;
 }
 
-.menu__description:hover .menu__description--price::after{
-  display: block;
+.menu__group--description:hover{
+  cursor: pointer;
 }
 
+.menu__description--check i{
+ display: none;
+ left: 16%;
+ //top:6px;
+ z-index: 1000;
+ font-size: 20px;
+ color: $white;
+}
