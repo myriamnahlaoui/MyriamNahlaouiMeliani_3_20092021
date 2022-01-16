@@ -47,7 +47,7 @@ margin: 0px 10px;
       width: 96%;
       @include large{
         padding: 10px;
-        } 
+        }
       }
         h3, p{
           margin-block-start: 5px;
@@ -71,15 +71,9 @@ margin: 0px 10px;
   @include hoverBtn;
 }
 
-/*curseur de la souris
-.menu__description:hover{
-  cursor: pointer;
-}*/
-
-
 //rognage du texte et ajout de "..."
 .menu__description--ellipsis{
-  @include ellipsis(220px)
+  @include ellipsis(94%)
 }
 
 

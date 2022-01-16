@@ -50,15 +50,8 @@
     //top: 6px;
     //visibility: visible;
   }
-  30%{
-    transform: rotate(100deg);
-  }
-  50%{
-    transform: rotate(180deg);
-    top: 3px;
-  }
   100%{
-    transform: rotate(360deg);
+    transform: rotate(2turn);
     //top: 6px;
   }
 }
@@ -68,7 +61,6 @@
   background-color: #99e2d0;
   padding: 12px;
   width: 28px;
-  height: 34px;
   height: 34px;
   position: absolute;
   left: 78%;
@@ -80,7 +72,8 @@
 
  // visibility: hidden;
   display: block;
-  animation: animationCheck 2s;
+  animation: animationCheck 2s ease-in-out;
+  
 }
 
 .menu__group--description:hover{
@@ -88,10 +81,48 @@
 }
 
 .menu__description--check i{
- display: none;
+display: none;
  left: 16%;
  //top:6px;
  z-index: 1000;
  font-size: 20px;
  color: $white;
+ text-align: center;
+ padding-top: 6px;
+
+}
+
+/*.menu__description p:hover{
+  width: 157px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+  transition: text-overflow 2s ease-in-out;
+}
+
+*/
+
+.menu__description p:hover{
+  animation: animationText 2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+}
+
+.menu_description:hover .menu__description--price p{
+  margin-right: 61px;
+}
+
+@keyframes animationText{
+  0%{
+    width: 94%;
+  }
+  50%{
+    width:81%;
+  }
+  100%{
+    width: 68%;
+  }
 }

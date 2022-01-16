@@ -432,15 +432,8 @@ template {
   0% {
     transform: rotate(0deg);
   }
-  30% {
-    transform: rotate(100deg);
-  }
-  50% {
-    transform: rotate(180deg);
-    top: 3px;
-  }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(2turn);
   }
 }
 .menu__group--description:hover .menu__description--contenair-check {
@@ -449,7 +442,6 @@ template {
   padding: 12px;
   width: 28px;
   height: 34px;
-  height: 34px;
   position: absolute;
   left: 78%;
   animation: animationCheckbox 2s;
@@ -457,7 +449,7 @@ template {
 
 .menu__group--description:hover .menu__description--check i {
   display: block;
-  animation: animationCheck 2s;
+  animation: animationCheck 2s ease-in-out;
 }
 
 .menu__group--description:hover {
@@ -470,8 +462,43 @@ template {
   z-index: 1000;
   font-size: 20px;
   color: #ffffff;
+  text-align: center;
+  padding-top: 6px;
 }
 
+/*.menu__description p:hover{
+  width: 157px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+  transition: text-overflow 2s ease-in-out;
+}
+
+*/
+.menu__description p:hover {
+  animation: animationText 2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+}
+
+.menu_description:hover .menu__description--price p {
+  margin-right: 61px;
+}
+
+@keyframes animationText {
+  0% {
+    width: 94%;
+  }
+  50% {
+    width: 81%;
+  }
+  100% {
+    width: 68%;
+  }
+}
 .menu__description {
   animation-name: descriptionAnimation;
   animation-duration: 2s;
@@ -1180,12 +1207,8 @@ article .menu__title i {
   opacity: 0.7;
 }
 
-/*curseur de la souris
-.menu__description:hover{
-  cursor: pointer;
-}*/
 .menu__description--ellipsis {
-  width: 220px;
+  width: 94%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
