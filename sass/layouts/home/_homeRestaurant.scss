@@ -119,6 +119,7 @@
   width: 50px;
   padding: 4px;
   text-align: center;
+  z-index: 101;
   transform: translate(192px, 32px);
   @include mobilePlus{
     transform: translate(271px, 27px)

@@ -40,7 +40,7 @@
     visibility: visible;
   }
   100%{
-    left: 78%;
+   left: 78%;
   }
 }
 
@@ -68,6 +68,10 @@
   animation: animationCheckbox 2s;
 }
 
+.menu__group--description:not(:hover) .menu__description--contenair-check{
+  display: none;
+}
+
 .menu__group--description:hover .menu__description--check i{
 
  // visibility: hidden;
@@ -90,39 +94,4 @@ display: none;
  text-align: center;
  padding-top: 6px;
 
-}
-
-/*.menu__description p:hover{
-  width: 157px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  direction: ltr;
-  transition: text-overflow 2s ease-in-out;
-}
-
-*/
-
-.menu__description p:hover{
-  animation: animationText 2s;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  direction: ltr;
-}
-
-.menu_description:hover .menu__description--price p{
-  margin-right: 61px;
-}
-
-@keyframes animationText{
-  0%{
-  width: 94%;
-  }
-  50%{
-  width:81%;
-  }
-  100%{
- width: 68%;
- }
 }
