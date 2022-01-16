@@ -638,6 +638,7 @@ img {
   background-color: #ededed;
   height: 40px;
   align-items: center;
+  z-index: 100;
 }
 .header__localisation input {
   border: none;
