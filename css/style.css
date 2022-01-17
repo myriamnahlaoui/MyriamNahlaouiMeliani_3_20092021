@@ -372,6 +372,8 @@ template {
 .restaurant__group i:hover:hover::after, .menu__title i:hover:hover::after {
   opacity: 1;
   z-index: 100;
+  font-size: 1.2rem;
+  transform: translate(-17px, -2px);
 }
 .restaurant__group i:hover::after, .menu__title i:hover::after {
   position: absolute;
@@ -419,23 +421,12 @@ template {
  // visibility: hidden;
   animation: animationCheck 2s ease-in-out;
 }*/
-@keyframes animationCheckbox {
-  0% {
-    left: 100%;
-    visibility: visible;
-  }
-  100% {
-    left: 78%;
-  }
+.menu__description--contenair-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@keyframes animationCheck {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(2turn);
-  }
-}
+
 .menu__group--description:hover .menu__description--contenair-check {
   border-radius: 0px 10px 10px 0px;
   background-color: #99e2d0;
@@ -444,16 +435,23 @@ template {
   height: 34px;
   position: absolute;
   left: 78%;
-  animation: animationCheckbox 2s;
+  animation: animationCheckbox 1s both;
 }
 
+@keyframes animationCheckbox {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 78%;
+  }
+}
 .menu__group--description:not(:hover) .menu__description--contenair-check {
   display: none;
 }
 
 .menu__group--description:hover .menu__description--check i {
-  display: block;
-  animation: animationCheck 2s ease-in-out;
+  animation: animationCheck 1s ease-in;
 }
 
 .menu__group--description:hover {
@@ -461,13 +459,32 @@ template {
 }
 
 .menu__description--check i {
-  display: none;
-  left: 16%;
   z-index: 1000;
   font-size: 20px;
   color: #ffffff;
   text-align: center;
-  padding-top: 6px;
+}
+
+@keyframes animationCheck {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.menu__description:hover .menu__description--price {
+  margin-right: 58px;
+  transition: all 1s;
+}
+
+.menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3 {
+  width: 167px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+  transition: width 1s;
 }
 
 .menu__description {
@@ -1121,6 +1138,9 @@ article .menu__title i {
   font-size: 1rem;
   margin-right: 15px;
 }
+article .menu__title i:hover {
+  font-size: 0.9rem;
+}
 
 .menu {
   margin: 0px 10px;
@@ -1137,6 +1157,7 @@ article .menu__title i {
 }
 .menu .menu__group .menu__group--description {
   display: flex;
+  justify-content: center;
 }
 .menu .menu__group .menu__description {
   margin-bottom: 15px;
@@ -1155,7 +1176,9 @@ article .menu__title i {
   margin-block-start: 5px;
   margin-block-end: 5px;
 }
-
+.menu .menu__group .menu__description--price {
+  font-weight: bold;
+}
 .menu__order {
   border: none;
   background: linear-gradient(#ff79da, #9356dc);
@@ -1186,6 +1209,9 @@ article .menu__title i {
   overflow: hidden;
   text-overflow: ellipsis;
   direction: ltr;
+}
+.menu__description--ellipsis:hover {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

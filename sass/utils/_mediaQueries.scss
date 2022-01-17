@@ -1,3 +1,9 @@
+@mixin mobileXS{
+  @media (min-width:280px){
+    @content;
+  }
+}
+
 @mixin mobilePlus {
   @media (min-width: 379px){
     @content;

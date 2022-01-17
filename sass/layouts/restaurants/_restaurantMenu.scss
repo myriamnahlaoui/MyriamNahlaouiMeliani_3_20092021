@@ -19,6 +19,9 @@ article{
   .menu__title i{
     font-size: $sizeHeart;
     margin-right: 15px;
+    &:hover{
+      font-size: 0.9rem;
+    }
   }
 }
 
@@ -37,6 +40,7 @@ margin: 0px 10px;
     }
     .menu__group--description{
       display: flex;
+      justify-content: center;
      
     }
       .menu__description{
@@ -52,6 +56,12 @@ margin: 0px 10px;
         h3, p{
           margin-block-start: 5px;
           margin-block-end: 5px;
+        }
+        .menu__description--price{
+          font-weight: bold;
+        }
+        &:hover{
+       //   margin-right: 62px;
         }
   }
 }
@@ -73,7 +83,10 @@ margin: 0px 10px;
 
 //rognage du texte et ajout de "..."
 .menu__description--ellipsis{
-  @include ellipsis(94%)
+  @include ellipsis(94%);
+  &:hover{
+    display:none;
+  }
 }
 
 

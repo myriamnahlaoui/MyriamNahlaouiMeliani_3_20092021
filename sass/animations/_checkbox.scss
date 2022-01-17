@@ -34,26 +34,10 @@
   animation: animationCheck 2s ease-in-out;
 }*/
 
-@keyframes animationCheckbox {
-  0%{
-    left: 100%;
-    visibility: visible;
-  }
-  100%{
-   left: 78%;
-  }
-}
-
-@keyframes animationCheck {
-  0%{
-    transform: rotate(0deg);
-    //top: 6px;
-    //visibility: visible;
-  }
-  100%{
-    transform: rotate(2turn);
-    //top: 6px;
-  }
+.menu__description--contenair-check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu__group--description:hover .menu__description--contenair-check{
@@ -64,8 +48,20 @@
   height: 34px;
   position: absolute;
   left: 78%;
-  //visibility: hidden;
-  animation: animationCheckbox 2s;
+  animation: animationCheckbox 1s both;
+
+}
+
+@keyframes animationCheckbox {
+  0%{
+   left:100%;
+    //right: 100%;
+    //visibility: hidden;
+  }
+  100%{
+    left: 78%;
+
+  }
 }
 
 .menu__group--description:not(:hover) .menu__description--contenair-check{
@@ -73,11 +69,8 @@
 }
 
 .menu__group--description:hover .menu__description--check i{
-
- // visibility: hidden;
-  display: block;
-  animation: animationCheck 2s ease-in-out;
-  
+ // display: block;
+  animation: animationCheck 1s ease-in;
 }
 
 .menu__group--description:hover{
@@ -85,13 +78,40 @@
 }
 
 .menu__description--check i{
-display: none;
- left: 16%;
- //top:6px;
  z-index: 1000;
  font-size: 20px;
  color: $white;
  text-align: center;
- padding-top: 6px;
+}
 
+
+
+@keyframes animationCheck {
+  0%{
+    transform: rotate(0deg);
+    
+    //top: 6px;
+    //visibility: visible;
+  }
+  100%{
+    transform: rotate(360deg);
+    //top: 6px;
+  }
+}
+
+// prix qui se décale
+
+.menu__description:hover .menu__description--price{
+ margin-right: 58px;
+ transition: all 1s;
+}
+
+
+.menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3{
+  width: 167px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+  transition: width 1s;
 }
