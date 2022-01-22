@@ -390,60 +390,35 @@ template {
   cursor: pointer;
 }
 
-/*.menu__description--contenair-check{
-  border-radius: 0px 10px 10px 0px;
-  background-color: #99e2d0;
-  padding: 12px;
-  width: 28px;
-  height: 34px;
-
-
-}*/
-/*
-.menu__description--contenair-check{
-    border-radius: 0px 10px 10px 0px;
-    background-color: #99e2d0;
-    padding: 12px;
-    width: 28px;
-    height: 34px;
-    position: absolute;
-    left: 78%;
-    //visibility: hidden;
-    animation: animationCheckbox 2s ease-in-out;
-}*/
-/*
-.menu__description--check{
-  position:relative;
-  left: 100%;
-  z-index: 1000;
-  font-size: 20px;
-  color: red;
- // visibility: hidden;
-  animation: animationCheck 2s ease-in-out;
-}*/
 .menu__description--contenair-check {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu__group--description:hover .menu__description--contenair-check {
+.menu__group--description .menu__description--contenair-check {
   border-radius: 0px 10px 10px 0px;
   background-color: #99e2d0;
   padding: 12px;
-  width: 28px;
+  width: 34px;
   height: 34px;
-  position: absolute;
-  left: 78%;
-  animation: animationCheckbox 1s both;
+  right: 0px;
+  animation: animationCheckbox 2s both;
+}
+@media (min-width: 768px) {
+  .menu__group--description .menu__description--contenair-check {
+    height: 41px;
+  }
 }
 
 @keyframes animationCheckbox {
   0% {
-    left: 100%;
+    /*left:100%;*/
   }
   100% {
-    left: 78%;
+    /*left: 78%;*/
+    transform: translateX(-34px);
+    opacity: 1;
   }
 }
 .menu__group--description:not(:hover) .menu__description--contenair-check {
@@ -495,7 +470,6 @@ template {
 @keyframes descriptionAnimation {
   0% {
     opacity: 0;
-    transform: translateY(-25px);
   }
   100% {
     opacity: 1;
@@ -1157,7 +1131,6 @@ article .menu__title i:hover {
 }
 .menu .menu__group .menu__group--description {
   display: flex;
-  justify-content: center;
 }
 .menu .menu__group .menu__description {
   margin-bottom: 15px;
@@ -1209,9 +1182,6 @@ article .menu__title i:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   direction: ltr;
-}
-.menu__description--ellipsis:hover {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

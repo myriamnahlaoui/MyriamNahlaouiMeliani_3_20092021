@@ -1,66 +1,39 @@
-/*.menu__description--contenair-check{
-  border-radius: 0px 10px 10px 0px;
-  background-color: #99e2d0;
-  padding: 12px;
-  width: 28px;
-  height: 34px;
-  
-
-}*/
-
-
-//.menu__group--description::after
-/*
-.menu__description--contenair-check{
-    border-radius: 0px 10px 10px 0px;
-    background-color: #99e2d0;
-    padding: 12px;
-    width: 28px;
-    height: 34px;
-    position: absolute;
-    left: 78%;
-    //visibility: hidden;
-    animation: animationCheckbox 2s ease-in-out;
-}*/
-
-/*
-.menu__description--check{
-  position:relative;
-  left: 100%;
-  z-index: 1000;
-  font-size: 20px;
-  color: red;
- // visibility: hidden;
-  animation: animationCheck 2s ease-in-out;
-}*/
-
 .menu__description--contenair-check{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu__group--description:hover .menu__description--contenair-check{
+.menu__group--description .menu__description--contenair-check{
   border-radius: 0px 10px 10px 0px;
   background-color: #99e2d0;
   padding: 12px;
-  width: 28px;
+  //width: 28px;
+  width: 34px;
   height: 34px;
-  position: absolute;
-  left: 78%;
-  animation: animationCheckbox 1s both;
+  //position: relative;
+  //left: 78%;
+  right: 0px;
 
+  //transform: translateX(20px);
+  animation: animationCheckbox 2s both;
+  @include large{
+    height: 41px;
+  }
 }
 
 @keyframes animationCheckbox {
   0%{
-   left:100%;
+   /*left:100%;*/
     //right: 100%;
     //visibility: hidden;
+    
+    
   }
   100%{
-    left: 78%;
-
+    /*left: 78%;*/
+    transform: translateX(-34px);
+    opacity: 1;
   }
 }
 
@@ -108,10 +81,11 @@
 
 
 .menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3{
-  width: 167px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  direction: ltr;
-  transition: width 1s;
+    width: 167px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+    transition: width 1s;
+  
 }

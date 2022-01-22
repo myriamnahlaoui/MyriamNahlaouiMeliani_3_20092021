@@ -40,7 +40,7 @@ margin: 0px 10px;
     }
     .menu__group--description{
       display: flex;
-      justify-content: center;
+     // justify-content: center;
      
     }
       .menu__description{
@@ -61,7 +61,7 @@ margin: 0px 10px;
           font-weight: bold;
         }
         &:hover{
-       //   margin-right: 62px;
+         //width: 95%;
         }
   }
 }
@@ -84,9 +84,9 @@ margin: 0px 10px;
 //rognage du texte et ajout de "..."
 .menu__description--ellipsis{
   @include ellipsis(94%);
-  &:hover{
-    display:none;
-  }
+  //&:hover{
+    //display:none;
+ // }
 }
 
 
