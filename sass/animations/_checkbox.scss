@@ -81,11 +81,7 @@
 
 
 .menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3{
-    width: 167px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    direction: ltr;
-    transition: width 1s;
-  
+  @include maxMedium{
+    @include ellipsis(167px);
+  }
 }

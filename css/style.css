@@ -453,13 +453,14 @@ template {
   transition: all 1s;
 }
 
-.menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3 {
-  width: 167px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  direction: ltr;
-  transition: width 1s;
+@media (max-width: 520px) {
+  .menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3 {
+    width: 167px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+  }
 }
 
 .menu__description {
@@ -1177,12 +1178,14 @@ article .menu__title i:hover {
   opacity: 0.7;
 }
 
-.menu__description--ellipsis {
-  width: 94%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  direction: ltr;
+@media (max-width: 520px) {
+  .menu__description--ellipsis {
+    width: 94%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,11 @@
-@mixin mobileXS{
-  @media (min-width:280px){
+@mixin mobilePlus {
+  @media (min-width: 379px){
     @content;
   }
 }
 
-@mixin mobilePlus {
-  @media (min-width: 379px){
+@mixin maxMedium {
+  @media (max-width: 520px){
     @content;
   }
 }

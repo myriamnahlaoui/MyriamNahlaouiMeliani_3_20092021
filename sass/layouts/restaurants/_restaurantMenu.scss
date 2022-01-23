@@ -80,10 +80,10 @@ margin: 0px 10px;
 
 //rognage du texte et ajout de "..."
 .menu__description--ellipsis{
-  @include ellipsis(94%);
-  //&:hover{
-    //display:none;
- // }
+  @include maxMedium{
+    @include ellipsis(94%);
+  }
+
 }
 
 
