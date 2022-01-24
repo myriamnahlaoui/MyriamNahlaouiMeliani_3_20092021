@@ -666,8 +666,8 @@ img {
   z-index: 100;
 }
 .header__presentation button:hover {
-  box-shadow: -5px 5px 4px 0px #808080;
-  opacity: 0.7;
+  box-shadow: -5px 5px 15px 0px #303030;
+  opacity: 0.8;
 }
 
 .functioning, .functioning__group {
@@ -1173,8 +1173,8 @@ article .menu__title i:hover {
 }
 
 .menu__order:hover {
-  box-shadow: -5px 5px 4px 0px #808080;
-  opacity: 0.7;
+  box-shadow: -5px 5px 15px 0px #303030;
+  opacity: 0.8;
 }
 
 @media (max-width: 520px) {

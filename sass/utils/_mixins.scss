@@ -37,12 +37,14 @@
   border-radius: 25px;
   margin: 10px 0px 40px 0px;
   box-shadow: -5px 5px 15px 0px $greyBtn;
+  
+
   z-index: 100;
 }
 
 @mixin hoverBtn{
-  box-shadow: -5px 5px 4px 0px #808080;
-  opacity: 0.7;
+  box-shadow: -5px 5px 15px 0px $greyBtnHover;
+  opacity: 0.8;
 }
 
 //text coupé avec "..."
