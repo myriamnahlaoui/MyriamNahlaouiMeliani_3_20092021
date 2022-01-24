@@ -50,6 +50,7 @@ margin: 0px 10px;
       background: $white;
       padding: 6px;
       width: 96%;
+      flex-shrink: 0;
       @include large{
         padding: 10px;
         }
@@ -78,6 +79,7 @@ margin: 0px 10px;
 .menu__order:hover{
   @include hoverBtn;
 }
+
 
 //rognage du texte et ajout de "..."
 .menu__description--ellipsis{

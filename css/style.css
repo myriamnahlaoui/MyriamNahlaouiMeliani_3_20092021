@@ -386,6 +386,7 @@ template {
   z-index: 100;
   font-size: 1.2rem;
   transform: translate(-17px, -2px);
+  animation: heartAnimation 1s;
 }
 .restaurant__group i:hover::after, .menu__title i:hover::after {
   position: absolute;
@@ -401,6 +402,14 @@ template {
   cursor: pointer;
 }
 
+@keyframes heartAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu__description--contenair-check {
   display: flex;
   justify-content: center;
@@ -431,7 +440,7 @@ template {
     opacity: 1;
   }
   100% {
-    transform: translateX(-34px);
+    transform: translateX(-43px);
     opacity: 1;
   }
 }
@@ -464,7 +473,7 @@ template {
 }
 
 @media (max-width: 520px) {
-  .menu__description:active .menu__description--name p, .menu__description:hover .menu__description--name h3 {
+  .menu__description:active .menu__description--name p, .menu__description:active .menu__description--name h3 {
     width: 167px;
     white-space: nowrap;
     overflow: hidden;
@@ -1139,6 +1148,7 @@ article .menu__title i:hover {
   background: #ffffff;
   padding: 6px;
   width: 96%;
+  flex-shrink: 0;
 }
 @media (min-width: 768px) {
   .menu .menu__group .menu__description {
