@@ -416,22 +416,22 @@ template {
   align-items: center;
 }
 
-.menu__group--description:active .menu__description--contenair-check {
+.menu__group--description:hover .menu__description--contenair-check {
   border-radius: 0px 10px 10px 0px;
   background-color: #99e2d0;
   padding: 12px;
   width: 34px;
   height: 34px;
   right: 0px;
-  animation: animationCheckbox 2s both;
+  animation: animationCheckbox 0.5s both;
 }
 @media (min-width: 768px) {
-  .menu__group--description:active .menu__description--contenair-check {
+  .menu__group--description:hover .menu__description--contenair-check {
     height: 41px;
   }
 }
 
-.menu__group--description:active {
+.menu__group--description:hover {
   cursor: pointer;
 }
 
@@ -451,12 +451,12 @@ template {
   text-align: center;
 }
 
-.menu__group--description:not(:active) .menu__description--contenair-check i {
+.menu__group--description:not(:hover) .menu__description--contenair-check i {
   display: none;
 }
 
-.menu__group--description:active .menu__description--check i {
-  animation: animationCheck 1s ease-in;
+.menu__group--description:hover .menu__description--check i {
+  animation: animationCheck 0.5s ease-in;
 }
 
 @keyframes animationCheck {
@@ -467,13 +467,13 @@ template {
     transform: rotate(360deg);
   }
 }
-.menu__description:active .menu__description--price {
+.menu__description:hover .menu__description--price {
   margin-right: 58px;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 @media (max-width: 520px) {
-  .menu__description:active .menu__description--name p, .menu__description:active .menu__description--name h3 {
+  .menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3 {
     width: 167px;
     white-space: nowrap;
     overflow: hidden;
