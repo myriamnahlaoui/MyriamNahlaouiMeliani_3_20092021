@@ -343,6 +343,18 @@ template {
   box-sizing: border-box;
 }
 
+.header__background--le-delice-des-sens img, .header__background--a-la-francaise img, .header__background--la-note-enchantee img, .header__background--la-palette-du-gout img {
+  height: 208px;
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 379px) {
+  .header__background--le-delice-des-sens img, .header__background--a-la-francaise img, .header__background--la-note-enchantee img, .header__background--la-palette-du-gout img {
+    height: 278px;
+  }
+}
+
 .menu, article, .functioning, .functioning__group, .header {
   display: flex;
   flex-direction: column;
@@ -381,7 +393,6 @@ template {
   content: "\f004";
   transform: translateX(-16px);
   font-weight: bold;
-  transition: all 2s;
   z-index: 1;
   font-size: 16px;
   background: -webkit-linear-gradient(#ff79da, #9356dc);
@@ -396,7 +407,7 @@ template {
   align-items: center;
 }
 
-.menu__group--description:hover .menu__description--contenair-check {
+.menu__group--description:active .menu__description--contenair-check {
   border-radius: 0px 10px 10px 0px;
   background-color: #99e2d0;
   padding: 12px;
@@ -406,38 +417,37 @@ template {
   animation: animationCheckbox 2s both;
 }
 @media (min-width: 768px) {
-  .menu__group--description:hover .menu__description--contenair-check {
+  .menu__group--description:active .menu__description--contenair-check {
     height: 41px;
   }
 }
 
+.menu__group--description:active {
+  cursor: pointer;
+}
+
 @keyframes animationCheckbox {
   0% {
-    /*left:100%;*/
+    opacity: 1;
   }
   100% {
-    /*left: 78%;*/
     transform: translateX(-34px);
     opacity: 1;
   }
 }
-.menu__group--description:not(:hover) .menu__description--contenair-check {
-  display: none;
-}
-
-.menu__group--description:hover .menu__description--check i {
-  animation: animationCheck 1s ease-in;
-}
-
-.menu__group--description:hover {
-  cursor: pointer;
-}
-
 .menu__description--check i {
   z-index: 1000;
   font-size: 20px;
   color: #ffffff;
   text-align: center;
+}
+
+.menu__group--description:not(:active) .menu__description--contenair-check i {
+  display: none;
+}
+
+.menu__group--description:active .menu__description--check i {
+  animation: animationCheck 1s ease-in;
 }
 
 @keyframes animationCheck {
@@ -448,13 +458,13 @@ template {
     transform: rotate(360deg);
   }
 }
-.menu__description:hover .menu__description--price {
+.menu__description:active .menu__description--price {
   margin-right: 58px;
   transition: all 1s;
 }
 
 @media (max-width: 520px) {
-  .menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3 {
+  .menu__description:active .menu__description--name p, .menu__description:hover .menu__description--name h3 {
     width: 167px;
     white-space: nowrap;
     overflow: hidden;
@@ -471,6 +481,7 @@ template {
 @keyframes descriptionAnimation {
   0% {
     opacity: 0;
+    transform: translateY(-25px);
   }
   100% {
     opacity: 1;
@@ -484,21 +495,6 @@ template {
   display: flex;
   justify-content: center;
   animation: loading 3s ease-in both;
-}
-
-.loading__icone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-}
-
-.loading__icone i {
-  font-size: 100px;
-  color: #9356dc;
-  animation: spinner 3s both reverse;
 }
 
 @keyframes loading {
@@ -523,6 +519,21 @@ template {
     z-index: 0;
   }
 }
+.loading__icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.loading__icone i {
+  font-size: 100px;
+  color: #9356dc;
+  animation: spinner 3s both reverse;
+}
+
 @keyframes spinner {
   0% {
     opacity: 1;
@@ -1001,18 +1012,6 @@ footer .footer__restaurant--proposition p, footer .footer__restaurant--partner p
 
 .header__icon i {
   transform: translateY(15px);
-}
-
-.header__background--le-delice-des-sens img, .header__background--a-la-francaise img, .header__background--la-note-enchantee img, .header__background--la-palette-du-gout img {
-  height: 208px;
-  display: flex;
-  width: 100%;
-  object-fit: cover;
-}
-@media (min-width: 379px) {
-  .header__background--le-delice-des-sens img, .header__background--a-la-francaise img, .header__background--la-note-enchantee img, .header__background--la-palette-du-gout img {
-    height: 278px;
-  }
 }
 
 @media (min-width: 379px) {

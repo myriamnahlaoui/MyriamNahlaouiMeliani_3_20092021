@@ -1,4 +1,3 @@
-
 .menu__description{
   animation-name: descriptionAnimation;
   animation-duration: 2s;
@@ -8,7 +7,7 @@
 @keyframes descriptionAnimation {
   0%{
     opacity: 0;
-  //  transform: translateY(-25px);
+    transform: translateY(-25px);
   }
   100%{
     opacity: 1;

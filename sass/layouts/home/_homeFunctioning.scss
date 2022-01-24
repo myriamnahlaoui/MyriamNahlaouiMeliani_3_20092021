@@ -1,3 +1,8 @@
+// partie fonctionnement de la page d'accueil ohmyfood
+
+// ensemble de la partie
+//.functioning = h2 compris
+//.functioning__group = choisissez + composez + dégustez
 .functioning, .functioning__group{
   @extend %flexColumn;
   margin: auto;
@@ -27,6 +32,7 @@
    }
 }
 
+// choisissez + composez + dégustez
 .functioning__choice, .functioning__menu, .functioning__restaurant{
   display: flex;
   flex-direction: row;
@@ -54,9 +60,7 @@
   }
 }
 
-
-
-
+// 1 + 2 + 3 
 .functioning__choice--number, .functioning__menu--number, .functioning__restaurant--number{
   font-size: 12px;
   background: $purple;
@@ -73,6 +77,7 @@
   }
 }
 
+//icone
 .functioning__choice--icone, .functioning__menu--icone, .functioning__restaurant--icone{
 @include icon;
   ~p{

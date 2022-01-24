@@ -1,54 +1,42 @@
+//mise en place de l'animation de la coche à droit
+
+//checkbox (fond menthe)
 .menu__description--contenair-check{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu__group--description:hover .menu__description--contenair-check{
+//au clic sur la carte (titre plat, description) la checkbox apparait
+.menu__group--description:active .menu__description--contenair-check{
   border-radius: 0px 10px 10px 0px;
   background-color: #99e2d0;
   padding: 12px;
-  //width: 28px;
   width: 34px;
   height: 34px;
-  //position: relative;
-  //left: 78%;
   right: 0px;
-
-  //transform: translateX(20px);
   animation: animationCheckbox 2s both;
   @include large{
     height: 41px;
   }
 }
 
+//au clic apparition de la main
+.menu__group--description:active{
+  cursor: pointer;
+}
+
 @keyframes animationCheckbox {
   0%{
-   /*left:100%;*/
-    //right: 100%;
-    //visibility: hidden;
-    
-    
+    opacity: 1;
   }
   100%{
-    /*left: 78%;*/
     transform: translateX(-34px);
     opacity: 1;
   }
 }
 
-.menu__group--description:not(:hover) .menu__description--contenair-check{
-  display: none;
-}
-
-.menu__group--description:hover .menu__description--check i{
- // display: block;
-  animation: animationCheck 1s ease-in;
-}
-
-.menu__group--description:hover{
-  cursor: pointer;
-}
+//mise en forme et animation de la coche
 
 .menu__description--check i{
  z-index: 1000;
@@ -57,30 +45,34 @@
  text-align: center;
 }
 
+//hors clic, la check ne doit pas être visible
+.menu__group--description:not(:active) .menu__description--contenair-check i{
+  display: none;
+}
 
+
+//au clic sur la carte (titre plat, description) la coche apparait
+.menu__group--description:active .menu__description--check i{
+  animation: animationCheck 1s ease-in;
+}
 
 @keyframes animationCheck {
   0%{
     transform: rotate(0deg);
-    
-    //top: 6px;
-    //visibility: visible;
   }
   100%{
     transform: rotate(360deg);
-    //top: 6px;
   }
 }
 
-// prix qui se décale
-
-.menu__description:hover .menu__description--price{
+// décalage du prix lors du clic
+.menu__description:active .menu__description--price{
  margin-right: 58px;
  transition: all 1s;
 }
 
-
-.menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3{
+//rognage texte au clic si trop long
+.menu__description:active .menu__description--name p, .menu__description:hover .menu__description--name h3{
   @include maxMedium{
     @include ellipsis(167px);
   }

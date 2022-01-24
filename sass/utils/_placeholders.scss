@@ -5,13 +5,25 @@
     box-sizing: border-box;
 }
 
-//mise en forme
+//background des restaurants
+%background{
+  height: 208px;
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+  @include mobilePlus{
+    height: 278px;
+  }
+}
+
+//mise en forme avec flexbox
+
 %flexColumn{
   display: flex;
   flex-direction: column;
 }
 
-//mise en forme 
+
 %flexColumnCenter{
   display:flex;
   flex-direction: column;
@@ -19,7 +31,6 @@
   text-align: center;
 }
 
-//mise en forme 
 %flexRowSbetween{
   display: flex;
   flex-direction: row;

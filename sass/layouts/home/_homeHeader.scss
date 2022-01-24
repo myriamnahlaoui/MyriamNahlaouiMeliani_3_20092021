@@ -1,8 +1,12 @@
+//réglage du header de la page d'accueil ohmyfood
+
 .header{
   @extend %flexColumn;
   margin: auto;
   width: 100%;
 }
+
+//logo + localisation
 
 .header__logo{
   @extend %logoEntete;
@@ -27,6 +31,7 @@
   }
 }
 
+// h1 + texte de présentation + bouton "explorer nos restaurants"
 .header__presentation{
   @extend %flexColumnCenter;
   align-items: center;

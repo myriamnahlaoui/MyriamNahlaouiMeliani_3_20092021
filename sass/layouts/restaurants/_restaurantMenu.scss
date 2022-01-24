@@ -1,4 +1,5 @@
-//mise en forme générale de la carte du menu
+//réglage de la carte du menu
+
 article{
   background: $greyLight;
   width: 100%;
@@ -83,7 +84,6 @@ margin: 0px 10px;
   @include maxMedium{
     @include ellipsis(94%);
   }
-
 }
 
 

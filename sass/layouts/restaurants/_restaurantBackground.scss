@@ -1,13 +1,6 @@
-%background{
-  height: 208px;
-  display: flex;
-  width: 100%;
-  object-fit: cover;
-  @include mobilePlus{
-    height: 278px;
-  }
-}
+//réglage du background de chaque restaurants
 
+//palette du gout
 .header__background--la-palette-du-gout img{
   @extend %background;
   @include mobilePlus{
@@ -24,6 +17,7 @@
   }
 }
 
+//la note enchantée 
 .header__background--la-note-enchantee img{
   @extend %background;
   object-position: 0px -73px;
@@ -41,6 +35,7 @@
   }
 }
 
+//a la française
 .header__background--a-la-francaise img{
   @extend %background;
   @include medium{
@@ -54,6 +49,7 @@
   }
 }
 
+//le délice des sens
 .header__background--le-delice-des-sens img{
   @extend %background;
   @include medium{
