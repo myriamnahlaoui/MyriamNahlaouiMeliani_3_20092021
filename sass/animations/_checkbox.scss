@@ -21,18 +21,22 @@
   }
 }
 
-//au clic apparition de la main
+//au survol apparition de la main
 .menu__group--description:hover{
   cursor: pointer;
+  
 }
 
 @keyframes animationCheckbox {
-  0%{
-    opacity: 1;
+  0% {
+  opacity: 0;
   }
-  100%{
-    transform: translateX(-43px);
-    opacity: 1;
+  50% {
+  opacity: 0;
+  }
+  100% {
+  transform: translateX(-43px);
+  opacity: 1;
   }
 }
 
@@ -42,36 +46,36 @@
  z-index: 1000;
  font-size: 20px;
  color: $white;
- text-align: center;
+text-align: center;
 }
 
-//hors clic, la check ne doit pas être visible
+//hors survol, la check ne doit pas être visible
 .menu__group--description:not(:hover) .menu__description--contenair-check i{
-  display: none;
+ display: none;
 }
 
 
-//au clic sur la carte (titre plat, description) la coche apparait
+//au survol sur la carte (titre plat, description) la coche apparait
 .menu__group--description:hover .menu__description--check i{
   animation: animationCheck .5s ease-in;
 }
 
 @keyframes animationCheck {
   0%{
-    transform: rotate(0deg);
+   transform: rotate(0deg);
   }
   100%{
-    transform: rotate(360deg);
-  }
+   transform: rotate(360deg);
+ }
 }
 
-// décalage du prix lors du clic
+// décalage du prix lors du survol
 .menu__description:hover .menu__description--price{
  margin-right: 58px;
  transition: all .5s;
 }
 
-//rognage texte au clic si trop long
+//rognage texte au survol si trop long
 .menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3{
   @include maxMedium{
     @include ellipsis(167px);

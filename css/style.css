@@ -437,7 +437,10 @@ template {
 
 @keyframes animationCheckbox {
   0% {
-    opacity: 1;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
   }
   100% {
     transform: translateX(-43px);
