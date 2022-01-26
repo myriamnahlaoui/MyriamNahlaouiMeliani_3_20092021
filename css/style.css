@@ -414,13 +414,14 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .menu__group--description:hover .menu__description--contenair-check {
   border-radius: 0px 10px 10px 0px;
   background-color: #99e2d0;
   padding: 12px;
-  width: 34px;
+  width: 30px;
   height: 34px;
   right: 0px;
   animation: animationCheckbox 0.5s both;
@@ -443,7 +444,7 @@ template {
     opacity: 0;
   }
   100% {
-    transform: translateX(-43px);
+    transform: translateX(-54px);
     opacity: 1;
   }
 }
