@@ -79,7 +79,7 @@ text-align: center;
 }
 
 //rognage texte au survol si trop long
-.menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3{
+.menu__group--description:hover .menu__description--name p, .menu__group--description:hover .menu__description--name h3{
   @include maxMedium{
     @include ellipsis(167px);
   }

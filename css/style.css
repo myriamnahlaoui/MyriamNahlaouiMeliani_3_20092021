@@ -477,7 +477,7 @@ template {
 }
 
 @media (max-width: 520px) {
-  .menu__description:hover .menu__description--name p, .menu__description:hover .menu__description--name h3 {
+  .menu__group--description:hover .menu__description--name p, .menu__group--description:hover .menu__description--name h3 {
     width: 167px;
     white-space: nowrap;
     overflow: hidden;
