@@ -471,7 +471,7 @@ template {
     transform: rotate(360deg);
   }
 }
-.menu__description:hover .menu__description--price {
+.menu__group--description:hover .menu__description--price {
   margin-right: 58px;
   transition: all 0.5s;
 }

@@ -73,7 +73,7 @@ text-align: center;
 }
 
 // décalage du prix lors du survol
-.menu__description:hover .menu__description--price{
+.menu__group--description:hover .menu__description--price{
  margin-right: 58px;
  transition: all .5s;
 }
